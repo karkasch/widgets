@@ -1,4 +1,4 @@
-﻿var __extends = this.__extends || function (d, b) {
+var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     __.prototype = b.prototype;
@@ -15,14 +15,11 @@ var Widgets;
     })(kendo.data.ObservableObject);
     Widgets.DocumentViewerViewModel = DocumentViewerViewModel;
 })(Widgets || (Widgets = {}));
-
 (function ($) {
     function createTemplate() {
         return '<h3>frrr</h3>';
     }
-
     var ui = kendo.ui, Widget = ui.Widget;
-
     var DocumentViewerWidget = Widget.extend({
         init: function () {
         },
@@ -31,14 +28,12 @@ var Widgets;
         },
         create: function () {
             var that = this;
-
             var viewModel = new Widgets.DocumentViewerViewModel();
             var view = new kendo.View(createTemplate(), { model: viewModel });
             view.render($(that.element));
             //kendo.bind($(this.element), viewModel, "");
         }
     });
-
     kendo.ui.plugin(DocumentViewerWidget);
 })(jQuery);
 //# sourceMappingURL=document.viewer.widget.js.map
