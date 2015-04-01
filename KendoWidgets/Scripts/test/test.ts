@@ -1,7 +1,7 @@
 ﻿$(document).ready(() => {
-    var model = kendo.data.ObservableObject.extend({
+    var model = kendo.observable({
         name: 'dedwew'
     });
 
-    kendo.bind('#binders', model, '');
+    kendo.bind($('#binders'), model, "");
 }); 

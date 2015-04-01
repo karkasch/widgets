@@ -29,7 +29,7 @@ namespace KendoWidgets
 
 
             bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
-                        "~/Scripts/kendo/kendo.all.min.js"));
+                        "~/Scripts/kendo/js/kendo.all.min.js"));
         }
     }
 }

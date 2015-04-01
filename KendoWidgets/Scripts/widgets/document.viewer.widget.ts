@@ -11,14 +11,18 @@
 
 (function ($) {
     function createTemplate() {
-        return '<h3>frrr</h3>';
+        var tmpl = kendo.template('<h3>frrr #: name #</h3>');
+        tmpl.h
     }
 
     var ui = kendo.ui,
         Widget = ui.Widget;
 
     var DocumentViewerWidget = Widget.extend({
-        init: function () {
+        init: function (element, options) {
+            var that = this;
+            Widget.fn.init.call(this, element, options);
+            that.create();
         },
         options: {
             name: 'DocumentViewerWidget'
